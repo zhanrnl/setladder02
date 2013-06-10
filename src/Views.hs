@@ -25,7 +25,7 @@ templates =
        H.span != "text: name" $ ""
     ) 
   , ("nameList",
-     H.ul != "foreach: nameList" $ do
+     H.ul != "foreach: nameList" $ 
        H.li != "text: $data" $ ""
     )
   ]

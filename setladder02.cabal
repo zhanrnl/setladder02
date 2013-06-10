@@ -28,9 +28,13 @@ executable sl2http
 executable sl2ws
   hs-source-dirs:   src
   main-is:          WSMain.hs
-  -- other-modules:       
+--  other-modules:    WSLogic.hs 
   build-depends:  base == 4.6.*,
                   text > 0.11,
                   websockets > 0.7.3,
                   mtl > 0.1.3,
-                  threadmanager >= 0.1.6
+                  threadmanager >= 0.1.6,
+                  lens >= 3.9,
+                  aeson >= 0.6,
+                  bytestring >= 0.10,
+                  containers > 0.5
